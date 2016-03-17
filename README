@@ -1,0 +1,10 @@
+This is an example script based on my attempts to generate WebGL from running GL code.
+It is designed as a recorder, so there is additional complexity as the commands cannot receive the return values from the remote
+
+Requirements:
+
+Scala v11
+
+To generate gl.c
+
+scalac gen.scala && cat glapis.h | scala functionParser > gl.c
